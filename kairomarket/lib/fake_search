@@ -1,0 +1,11 @@
+Container(
+                          child: TextFormField(
+                            onChanged: (String searchParam) {
+                              print(searchParam);
+                              value.searchProduct(searchParam: searchParam);
+                            },
+                            decoration: InputDecoration(
+                                hintText: 'Search prducts here',
+                                fillColor: Colors.white),
+                          ),
+                        ),
